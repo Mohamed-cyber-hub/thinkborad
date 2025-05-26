@@ -18,8 +18,9 @@ app.use(rateLimit)
 
 
 app.use('/api/notes', notes);
-
-
+app.get('/', (req, res) => {
+    res.send('Welcome to the Notes API');
+});
 
 connectDB().then(() => {
     app.listen(PORT, () => {

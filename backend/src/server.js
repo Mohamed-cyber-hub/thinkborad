@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // middlewares
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://thinkborad-frontend.vercel.app',
 }));
 app.use(express.json());
 app.use(rateLimit)
